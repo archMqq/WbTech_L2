@@ -26,7 +26,7 @@ func TestDigidsErr(t *testing.T) {
 	input := "45"
 
 	_, err := UnpackString(input)
-	assert.ErrorContains(t, err, "contains digids only")
+	assert.ErrorContains(t, err, "digid without prev char")
 }
 
 func TestEmpty(t *testing.T) {
